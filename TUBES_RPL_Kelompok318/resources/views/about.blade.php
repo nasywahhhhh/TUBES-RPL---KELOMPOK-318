@@ -46,6 +46,13 @@
         30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
         40%, 60% { transform: translate3d(4px, 0, 0); }
       }
+      .jumbotron {
+      margin-top: 100px; /* Adjust this value as needed */
+      }
+      body {
+            background-color: #262D3F;
+        }
+     
     </style>
   </head>
   <body>
@@ -57,13 +64,10 @@
 <!-- MODAL -->
 <x-modal/>
 
-<div class="aboutus-menu">
-  <div class="aboutus-image">
-    <div class="banner-text-aboutus text-center text-white">
-      <h1 class="fst-italic text-white">About Us</h1>
-    </div>
-  </div>
-</div>
+<div class="jumbotron text-center">
+  <h1 class="display-4" style="font-weight: bold; color: #FEA116;">About Us</h1>
+</div><br>
+
 <div class="icon-about">
   <div class="container">
     <div class="row text-center text-white">
@@ -77,7 +81,7 @@
             height="56"
           />
           <h6 class="fw-bold mt-3">18 Maret 2023</h6>
-          <p class="px-3">Feater Catering berdiri</p>
+          <p class="px-3 " style="color: #fafafa;">Didirikan pada tahun 2019, Yellow Fit Kitchen telah menjadi tujuan utama bagi mereka yang mencari makanan sehat dan bergizi</p>
         </div>
       </div>
       <div class="col-md-4 col-sm-12">
@@ -90,35 +94,21 @@
             height="56"
           />
           <h6 class="fw-bold mt-3">18 Outlet</h6>
-          <p class="px-2">
-                                          Jabodebek
-                                                        ,
-                Tangerang
-                                                        ,
-                Surabaya
-                                                        ,
-                Bandung
-                                                        ,
-                Medan
-                                                        ,
-                Palembang
-                                                        ,
-                Malang
-                                                        ,
-                Pekan Baru
-                                                        ,
-                Semarang
-                                                        ,
-                Batam
-                                                        ,
-                Yogyakarta
-                                                        ,
-                Makasar
-                                                        ,
-                Lampung
-                                                        ,
-                Solo
-                                    </p>
+          <p class="px-2" style="color: #fafafa;">
+            Jabodetabek,
+            Surabaya,
+            Bandung,
+            Medan,
+            Palembang,
+            Malang,
+            Pekan Baru,
+            Semarang,
+            Batam,
+            Yogyakarta,
+            Makasar,
+            Lampung,
+            Solo
+          </p>
         </div>
       </div>
       <div class="col-md-4 col-sm-12">
@@ -130,10 +120,13 @@
             width="55"
             height="56"
           />
-          <h6 class="fw-bold mt-3">Refund Guarantee</h6>
-          <p class="px-3">Udah ikut program Feater Catering tapi berat badan kamu enggak turun atau makanannya dirasa enggak enak?</p>
-          <p>UANG KAMU DIKEMBALIKAN 100% !</p>
+          <h6 class="fw-bold mt-3 style="color: #fafafa;">Refund Guarantee</h6>
+          <p class="px-3" style="color: #fafafa;">Udah ikut program Feater Catering tapi berat badan kamu enggak turun atau makanannya dirasa enggak enak?</p>
+          <p style="color: #fafafa;">UANG KAMU DIKEMBALIKAN 100% !</p>
         </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <img src="{{ asset('img/MAP OUTLET.png') }}" class="img-fluid" alt="..." style="width: 50%; height: auto;">
       </div>
     </div>
     <hr class="mt-5" />
@@ -141,44 +134,46 @@
   <div class="vision-aboutus">
     <div class="container">
       <div class="row mt-5">
-        <div class="col-lg-6">
-          <h2 class="text-warning text-center fw-bold">Visi & Misi</h2>
-          <div class="vision text-white p-5">
+        <div class="col-lg-6 mx-auto">
+          <h2 class="text-center fw-bold" style="color: #000000;">Visi & Misi</h2>
+          <div class="row text-white" style="margin-top:50px">
+            <div class="col-md-6">
             <ul>
-              <h5>Visi</h5>
-              <li class="mt-3">
-                Menjadi <span class="fst-italic">top of mind</span> perusahaan produk diet di Indonesia
+              <h5 style="color: white;">Visi</h5>
+              <li class="mt-3" style="color: #ffffff; font-style: normal;">
+                <p style="color: white; font-style: normal; text-align: justify;">Menjadi <span class="fst-italic" style="color: #ffffff; font-style: normal;">top of mind</span> perusahaan produk diet di Indonesia
                 yang didukung dengan produk, pelayanan dan manajemen
-                yang terbaik
+                yang terbaik</p>
               </li>
             </ul>
-          </div>
-          <div class="mission text-white ps-5">
-            <ul>
-              <h5>Misi</h5>
-              <li class="mt-3">
-                Menyediakan makanan yang selalu enak, tidak terasa seperti makan diet, mengenyangkan, kekinian, dan bersih di seluruh kota besar di Indonesia.
-              </li>
-              <li class="mt-3">
-                Memberikan pelayanan pengantaran makanan yang tepat waktu, ramah, dan selalu siap membantu <span class="fst-italic">customer.</span>
-              </li>
-              <li class="mt-3">
-                Membantu dan melayani setiap pertanyaan atau permintaan
-                dari <span class="fst-italic">customer</span> dengan ramah, cepat dan penuh solusi.
-              </li>
-              <li class="mt-3">
-                Melakukan pemasaran yang massif, efektif, efisien, dan selalu mengikuti perkembangan zaman bagi seluruh target market, yang didukung dengan riset dan analisa yang kuat.
-              </li>
-              <li class="mt-3">
-                Membangun <span class="fst-italic">brand</span> yang kuat, dengan memberikan konten yang selalu dekat dan relevan dengan <span class="fst-italic">target market</span> di seluruh <span class="fst-italic">platform</span> yang ada.
-              </li>
-            </ul>
+            </div>
+            <div class="col-md-6">
+              <ul>
+                <h5 style="color: #fafafa;">Misi</h5>
+                <li class="mt-3" style="color: #ffffff; text-align: justify">
+                  Menyediakan makanan yang selalu enak, tidak terasa seperti makan diet, mengenyangkan, kekinian, dan bersih di seluruh kota besar di Indonesia.
+                </li>
+                <li class="mt-3" style="color: #ffffff; text-align: justify;">
+                  Memberikan pelayanan pengantaran makanan yang tepat waktu, ramah, dan selalu siap membantu <span class="fst-italic" style="color: #ffffff;">customer.</span>
+                </li>
+                <li class="mt-3" style="color: #ffffff; text-align: justify;">
+                  Membantu dan melayani setiap pertanyaan atau permintaan
+                  dari <span class="fst-italic" style="color: #ffffff;">customer</span> dengan ramah, cepat dan penuh solusi.
+                </li>
+                <li class="mt-3" style="color: #ffffff; text-align: justify;">
+                  Melakukan pemasaran yang massif, efektif, efisien, dan selalu mengikuti perkembangan zaman bagi seluruh target market, yang didukung dengan riset dan analisa yang kuat.
+                </li>
+                <li class="mt-3" style="color: #ffffff; text-align: justify;">
+                  Membangun <span class="fst-italic" style="color: #ffffff; ">brand</span> yang kuat, dengan memberikan konten yang selalu dekat dan relevan dengan <span class="fst-italic" style="color: #ffffff;">target market</span> di seluruh <span class="fst-italic" style="color: #ffffff;">platform</span> yang ada.
+                </li>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+
+
 <div class="aboutus-partner text-center">
   <div class="container">
     <h2 class="fst-italic mb-5 mt-5 fs-5 fw-bold">Feater Catering's Partners</h2>
